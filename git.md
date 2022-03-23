@@ -29,3 +29,7 @@ git log --oneline
 git log -3 --oneline
 git log -p
 git log --stat
+
+
+#Undo Changes:
+git checkout -- dummy
