@@ -88,3 +88,11 @@ node_modules/
 git rm --cached -r .
 git add .
 git commit -m "M"
+
+
+
+#Remote
+git remote add origin https://github.com/rfinland/git-cheat-sheet.git
+git remote
+git branch -M master
+git push -u origin master
