@@ -96,3 +96,4 @@ git remote add origin https://github.com/rfinland/git-cheat-sheet.git
 git remote
 git branch -M master
 git push -u origin master
+git push -u origin develop
