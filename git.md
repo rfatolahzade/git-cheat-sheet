@@ -61,8 +61,16 @@ git branch -d dev
 git checkout -b develop
 
 
-
+#Merge:
 git checkout master
 git merge develop
 git log --graph
 
+#Git stash
+#Save temp commits on a branch Without see Modified files on the other branch
+#on your develop branch (in my case)
+git stash
+git stash save "Pre commit"
+git stash list
+git stash  show -p stash@{0}
+git stash apply stash@{0}
