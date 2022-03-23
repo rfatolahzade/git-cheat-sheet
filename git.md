@@ -74,3 +74,5 @@ git stash save "Pre commit"
 git stash list
 git stash  show -p stash@{0}
 git stash apply stash@{0}
+git stash pop stash@{0}
+git stash drop  stash@{1}
