@@ -2,8 +2,8 @@ git config
 git config --global user.name "[rfinland]"
 
 git config --global user.email "[r.rinland88@gmail.com]"
-
-
+git config --global core.editor atom
+git config --global --edit
 #Used to list all the files that have to be committeds
 git status
 git status --long
@@ -76,3 +76,14 @@ git stash  show -p stash@{0}
 git stash apply stash@{0}
 git stash pop stash@{0}
 git stash drop  stash@{1}
+
+
+
+#.ignore file sample:
+node_modules/
+*.txt
+!a.txt
+
+#If you have had a commited file and now you wanna add it to ignore file:
+git rm --cached -r .
+git commit -a -m "M"
