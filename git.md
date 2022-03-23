@@ -59,3 +59,10 @@ git checkout master
 git branch -d dev
 #Other way to create:
 git checkout -b develop
+
+
+
+git checkout master
+git merge develop
+git log --graph
+
