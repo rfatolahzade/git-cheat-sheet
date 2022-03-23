@@ -32,4 +32,4 @@ git log --stat
 
 
 #Undo Changes:
-git checkout -- dummy
+git restore -- dummy
