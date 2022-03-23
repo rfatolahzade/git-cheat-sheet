@@ -86,4 +86,5 @@ node_modules/
 
 #If you have had a commited file and now you wanna add it to ignore file:
 git rm --cached -r .
-git commit -a -m "M"
+git add .
+git commit -m "M"
