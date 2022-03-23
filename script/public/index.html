@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patternify</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        function checkPattern(text, pattern, batchSize) {
+            const regexp = new RegExp(pattern, 'gi')
+            const allWords = text.split(' ')
+            const batches = []
+            let result = 0
+
+            while (allWords.length) {
+                batches.push(allWords.splice(0, batchSize))
+            }
+
+            batches.map(batch => result += batch.join(' ').match(regexp)?.length || 0)
+
+            return result
+        }
+
+        function search() {
+            let text = document.getElementById("text").value;
+            let pattern = document.getElementById("pattern").value;
+            let size = document.getElementById("size").value;
+
+            const occurrences = checkPattern(text, pattern, size)
+
+            let resultInput = document.getElementById("result");
+            resultInput.innerText = `"${pattern}" discovered ${occurrences} times in the text`;
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+    <form>
+        <div class="container">
+            <label>Text</label>
+            <textarea id="text" placeholder="Copy your text here ..."></textarea>
+        </div>
+
+        <div class="container">
+            <label>Pattern</label>
+            <textarea id="pattern" placeholder="Copy your pattern here..."></textarea>
+        </div>
+
+        <div class="container">
+            <label>Size</label> <input id="size" type="number" />
+        </div>
+
+        <button type="button" onclick="search()">Search</button>
+    </form>
+
+    <h3 id="result"></h3>
+</div>
+</body>
+</html>
