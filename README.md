@@ -122,17 +122,3 @@ git branch -M master
 git push -u origin master
 git push -u origin develop
 ```
-
-#bisect
-```bash
-git bisect start
-git bisect good <Choose Hash when it was good>
-#test it and add re-action (bad-good)
-git bisect bad
-#OR
-git bisect good
-```
-```bash
-When you found out which commit ruined everything then:
-git bisect reset
-```
