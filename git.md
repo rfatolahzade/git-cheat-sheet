@@ -52,3 +52,10 @@ git reset --hard caddc3f
 
 
 # git branch:
+git branch dev
+git branch -a
+git checkout dev
+git checkout master
+git branch -d dev
+#Other way to create:
+git checkout -b develop
