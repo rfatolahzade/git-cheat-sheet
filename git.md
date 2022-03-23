@@ -32,4 +32,23 @@ git log --stat
 
 
 #Undo Changes:
+#Before Add
 git restore -- dummy
+#After Add
+git restore --staged dummy
+
+#Undo commit:
+First
+List of the commits:
+git log --oneline
+
+5314de1 (HEAD -> master) M files
+9d0eefb M files
+caddc3f M files
+29e89e3 init
+I'm going to switch to caddc3f
+git reset caddc3f
+git reset --hard caddc3f
+
+
+# git branch:
