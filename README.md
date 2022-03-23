@@ -60,7 +60,12 @@ I'm going to switch to caddc3f
 ```bash
 git reset caddc3f
 git reset --hard caddc3f
+git checkout <commit hash>
+git revert <commit hash>
 ```
+- If you want to test the previous commit just do git checkout <test commit hash>; then you can test that last working version of your project.
+- If you want to revert the last commit just do git revert <unwanted commit hash>; then you can push this new commit, which undid your previous commit.
+- To fix the detached head do git checkout <current branch>.
 
 # git branch:
 ```bash
