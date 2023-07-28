@@ -1,6 +1,6 @@
 ```bash
 git config
-git config --global user.name "[rfinland]"
+git config --global user.name "[rfatolahzade]"
 
 git config --global user.email "[r.rinland88@gmail.com]"
 git config --global core.editor atom
@@ -137,9 +137,7 @@ When you found out which commit ruined everything then:
 git bisect reset
 ```
 
-#git-clone-all
-The best way that I test to clone all public repositories:
-### Create a ssh-key
+#Create a ssh-key
 Create a ssh key and then set in in github:
 
 ```bash
@@ -147,6 +145,9 @@ ssh-keygen -t ed25519 -C "#YOUREMAIL"
 ```
 Set your pub key:
 https://github.com/settings/keys
+
+#git-clone-all
+The best way that I test to clone all public repositories:
 
 Installedpackages:
 ```bash
