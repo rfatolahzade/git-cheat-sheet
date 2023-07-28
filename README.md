@@ -98,8 +98,12 @@ git stash apply stash@{0}
 git stash pop stash@{0}
 git stash drop  stash@{1}
 ```
-
-
+#Update branch from master (in my case)
+```bash
+git checkout develop
+git rebase origin/master
+git push
+```
 #.ignore file sample:
 ```bash
 node_modules/
