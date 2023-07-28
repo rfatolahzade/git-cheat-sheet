@@ -30,12 +30,12 @@ git commit -m ""
 ```bash
 git rm --cached  dummy.txt
 ```
-#Remove All Staged Files/Directories (staged means all stuff those who added )
+#Remove All Staged Files/Directories
 ```bash
 git rm --cached -r .
 ```
 
-#Git diff Show changes between working directory & staging area and staging area & remote repository:
+#Git diff Show changes between working directory & staging area and staging area & repository:
 ```bash
 git diff [file] #Show changes between working directory and staging area
 git diff --staged [file] #Shows any changes between the staging area and the repository.
