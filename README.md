@@ -33,7 +33,7 @@ git diff
 ```bash
 git log
 git log --oneline
-git log -3 --oneline
+git log -3 --oneline    ##3Last commits
 git log -p
 git log --stat
 ```
