@@ -50,10 +50,10 @@ git log -p
 git log --stat
 ```
 #Undo Changes:
-#Before Add
+#On Working Directory:
 ```bash
 git restore -- dummy
-#After Add
+#From Staging
 git restore --staged dummy
 ```
 #Undo commit:
@@ -72,7 +72,7 @@ I'm going to switch to caddc3f
 ```bash
 git reset caddc3f
 git reset --hard caddc3f
-git checkout <commit hash>
+git checkout <commit hash>  #other usecase: git checkout [file] Discard changes in working directory. This operation is unrecoverable. git checkout -b branchname to checkout working directory to destination branch.
 git revert <commit hash>
 ```
 - If you want to test the previous commit just do git checkout <test commit hash>; then you can test that last working version of your project.
