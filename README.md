@@ -1,3 +1,13 @@
+In Git, the three areas (Working Directory, Staging Area, and Repository) are referred to as "areas" or "zones." 
+Each area represents a specific stage in the typical Git workflow, allowing you to manage changes to your project effectively.
+
+-  Working Directory: This area represents the directory on your local machine where you are actively working on your project. It contains the actual files that you are editing, creating, or deleting as you develop your code.
+
+-  Staging Area (Index): The staging area is an intermediate area that comes between the Working Directory and the Repository. It acts as a holding area for changes that you want to include in the next commit. When you make modifications to files in the Working Directory, you use the git add command to move those changes to the Staging Area.
+
+- Repository: The Repository is the Git database that stores the entire history and versioned data of your project. It is the central location where all the committed snapshots, branches, tags, and other Git objects reside. When you are ready to permanently save the changes you've staged in the Staging Area, you use the git commit command to create a new commit in the Repository.
+When you create a new Git repository in a directory, it contains both the working directory and the staging area. As you make changes to files, you use 'git add' to move changes from the working directory to the staging area. Then, when you use 'git commit', the changes in the staging area are permanently recorded in the repository as a new commit.
+There are two types of repository (your local machiene and remote machines) just like Docker in this case.
 ```bash
 git config
 git config --global user.name "[rfatolahzade]"
