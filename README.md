@@ -146,6 +146,21 @@ ssh-keygen -t ed25519 -C "#YOUREMAIL"
 Set your pub key:
 https://github.com/settings/keys
 
+#Clone via ssh
+After adding the pub key to your github,now you can clone your private repo via ssh
+Make sure your ssh agent is running as well:
+```bash
+ eval "$(ssh-agent -s)"
+```
+List The agent identities:
+```bash
+ssh-add -L
+```
+if you aimed The agent has no identities, add your private key to list of identities via ssh-add command:
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
 #git-clone-all
 The best way that I test to clone all public repositories:
 
