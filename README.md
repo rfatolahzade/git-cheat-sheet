@@ -25,9 +25,11 @@ git rm --cached  dummy.txt
 git rm --cached -r .
 ```
 
-#Git diff between what you added and what is
+#Git diff Show changes between working directory & staging area and staging area & remote repository:
 ```bash
-git diff
+git diff [file] #Show changes between working directory and staging area
+git diff --staged [file] #Shows any changes between the staging area and the repository.
+
 ```
 #list of commits
 ```bash
@@ -215,7 +217,6 @@ git restore --staged .         # Remove all changes from the staging area
 Review changes in the staging area:
 
 ```bash
-
 git diff --staged        # Show the difference between the last commit and the staging area
 ```
 Local Directory:
