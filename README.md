@@ -192,4 +192,100 @@ Your cloned repos are already in :
 ```bash
 ~/github-archive/repos/rfatolahzade
 ```
-Prefer to use it as sudo user
+
+
+Below are some useful Git commands and best practices grouped based on where they will have an effect:
+staging, local directory, and remote repository. 
+Staging Area:
+Add changes to the staging area:
+
+```bash
+
+git add <file(s)>       # Add specific files to the staging area
+git add .              # Add all changes in the current directory to the staging area
+git add -p             # Interactively review and add changes to the staging area
+```
+Remove changes from the staging area:
+
+```bash
+
+git restore --staged <file(s)>  # Remove specific file(s) from the staging area
+git restore --staged .         # Remove all changes from the staging area
+```
+Review changes in the staging area:
+
+```bash
+
+git diff --staged        # Show the difference between the last commit and the staging area
+```
+Local Directory:
+Commit changes:
+
+```bash
+
+git commit -m "Commit message"        # Commit staged changes with a commit message
+git commit -a -m "Commit message"     # Commit all tracked changes (staged and unstaged)
+git commit --amend                   # Amend the last commit with staged changes
+```
+Review commit history:
+
+```bash
+
+git log                # Show commit history
+git log --oneline      # Show commit history in a compact format
+```
+Undo changes:
+
+```bash
+
+git restore <file(s)>  # Discard changes in working directory (unstaged)
+git checkout <file(s)> # Undo changes and restore files to the last commit (unstaged)
+```
+Create and switch branches:
+
+```bash
+
+git branch <branch_name>     # Create a new branch
+git checkout <branch_name>   # Switch to an existing branch
+git checkout -b <branch_name> # Create and switch to a new branch
+```
+Merge branches:
+
+```bash
+
+git merge <branch_name>   # Merge specified branch into the current branch
+```
+Remote Repository:
+Clone a repository:
+
+```bash
+
+git clone <repository_url>       # Clone a remote repository to your local machine
+```
+Push changes to a remote repository:
+
+```bash
+
+git push <remote_name> <branch_name>   # Push local commits to the remote branch
+```
+Fetch and pull changes from a remote repository:
+
+```bash
+
+git fetch <remote_name>           # Fetch changes from the remote repository
+git pull <remote_name> <branch_name>  # Pull changes from the remote branch into the current branch
+```
+Review remote repositories and branches:
+
+```bash
+git remote              # List remote repositories
+git remote -v           # Show remote repositories with URLs
+git branch -r           # List remote branches
+```
+Create and manage remote branches:
+
+```bash
+
+git push -u <remote_name> <local_branch_name>  # Push a local branch and set up to track it remotely
+git push <remote_name> --delete <branch_name>  # Delete a remote branch
+```
