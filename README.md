@@ -73,7 +73,8 @@ git branch dev
 git branch -a
 git checkout dev
 git checkout master
-git branch -d dev
+git branch -d develop #delete a branch
+git push -d origin develop #delete a remote branch 
 ```
 #Other way to create:
 ```bash
